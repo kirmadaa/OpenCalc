@@ -188,7 +188,7 @@ class MainActivity : AppCompatActivity() {
                         clipboardManager.setPrimaryClip(
                             ClipData.newPlainText(
                                 "Copied Result",
-                                binding.resultDisplay.text()
+                                binding.resultDisplay.text.toString()
                             )
                         )
                         // Only show a toast for Android 12 and lower.
